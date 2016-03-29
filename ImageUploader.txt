@@ -1,0 +1,10 @@
+
+add this line to default.htm
+
+<script type="text/javascript" src="Scripts/image-uploader.js"></script>
+
+add this line to custom control for image uploader
+myapp.AddEditDetail.Image1_render = function (element, contentItem) {
+    // Write code here.
+    createImageUploader(element, contentItem, "max-width: 500px; max-height:300px");
+};
